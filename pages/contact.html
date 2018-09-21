@@ -1,26 +1,98 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>contact</title>
-</head>
+	<head>
+	<meta charset="UTF-8">
+	<title>contact</title>
+	<style>
+		
+/*Layout*/
+		#container {
+		width: 80%;
+		margin: auto;
+		border: 1px solid black;
+		min-height: 90vh;
+		}
+		
+		#header{
+			
+			border-bottom: 1px solid black;
+		padding: 10px;
+			text-align: center;
+			background-color: aliceblue;
+		}
+		
+		#nav{
+			border-bottom: 1px solid black;
+			padding: 10px;
+			text-align: center;
+		}
+		
+		#main{
+			
+			padding: 10px;
+		}
+		
+/* Form style*/
+form {
+	width: 40vw;
+	margin: 20px auto;
+	border: 3px solid black;
+	padding: 20px;
+	background-color: aliceblue;
+}
+</style>
+	</head>
 
+	<body>
+
+<!--Main layout container-->
+<div id="container">
+      <div id="header"><header><!-- semantisk HTML: sidehovedet-->
+      <h1>Contact</h1>
+		  </header></div>
 	
-	
-<body>
-	<header><!-- semantisk HTML: sidehovedet-->
-  <h1>Contact</h1>
-</header>
-	
-		<!--Navigation-->
-<nav>
-	<a href="../index.html">Home</a>
-	<a href="hello-world.html">Hello world</a>
-	<a href="//www.cphbusiness.dk" target="_blank">My School</a>
-	<a href="The animal table (undervisning).html">The animal table</a>
-	<a href="contact.html">Contact</a>
-</nav>
-	
+      <div id="nav"><nav> <a href="../index.html">Home</a> <a href="hello-world.html">Hello world</a> <a href="//www.cphbusiness.dk" target="_blank">My School</a> <a href="The animal table (undervisning).html">The animal table</a> <a href="contact.html">Contact</a> </nav></div>
+      
+	<div id="main"><form>
+      <form action="mailto:emma.blaesbjerg@gmail.com" method="post" enctype="text/plain"
+    </form>
+<p>
+      <label>Your Name:</label>
+    </p>
+<p>
+      <input type="text" name="name" placeholder="Full name.." autofocus required>
+    </p>
+
+<!--Email-->
+
+<p>
+      <label>Your email:</label>
+    </p>
+<p>
+      <input type="text" name="email" placeholder="Email adress.." autofocus required>
+    </p>
+
+<!--Besked/meddelelse-->
+<label>Your message</label>
+<p>
+      <textarea name="comment" placeholder="Your message..."></textarea>
+    </p>
+<p>
+      <input type="radio" name="Love">
+      I love this!</p>
+<p>
+      <input type="radio" name="Love">
+      I hate this!</p>
+<!--send knap-->
+
+<p>
+      <input type="submit" value="Submit Form" >
+    </p>
+</form></div>
+      <div id="footer"></div>
+    </div>
+		
+		
+
 </body>
-	
 </html>
