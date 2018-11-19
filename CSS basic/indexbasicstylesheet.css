@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* CSS Document */
+
+p {
+	color: black;
+	font-family: helvetica, arial, sans-serif;
+	text-align: justify;
+	line-height: 140%;
+	width: 500px;
+}
+body {
+	background-color: #8BCCE2; 
+	background-image: url("images/IMG_5393.jpg");
+	background-repeat: no-repeat;
+	/* background-position: center; */
+	background-size: cover;
+}
+h1 {
+	font-family: 'Crete Round', serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 60px;
+	/* text-decoration: underline; */ 
+}
+a {
+	color: aquamarine;
+	text-decoration: none;
+	clear: both;
+	display: block;
+}
+a:link {
+	color: blue;
+}
+a:visited {
+	color: black;
+}
+a:hover {
+	color: black;
+	font-weight: bold;
+	font-family: georgia, serif;
+	letter-spacing: 10px;
+}
+a:active {
+	color: black;
+}
+
+.fire-ben{
+	color: black;
+}
+
+.den-foerste{
+	color: lightcoral;
+}
+.to-ben{
+	color:maroon;
+}
+
+span.highlight{
+	background: #78DECD;
+}
+
+span{
+	background:#58A3C9;
+}
+
+
+#kasse1{
+	background: #DDD;
+	margin: 50px;
+	border: solid black 2px; 
+	width: 20%;
+	height: 20%;
+	
+}
+
+
+#kasse2 {
+	background: #eee;
+	margin:50px;
+	border: dashed black 2px;
+	width: 20%;
+	height: 20%;
+	
+	
+}
+
+
+.tekst{
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	width: 100px;
+	border: 1px solid white;
+}
+
+.tekst2{
+	position: relative;
+	top: 100px;
+	left: 100px;
+}
+
+
+
+

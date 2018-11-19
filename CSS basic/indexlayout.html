@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>indexlayout</title>
+	
+	<style>
+		.container{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			height: 500px;
+			background-color: lightpink;
+			align-items: flex-end;
+			align-content: stretch;
+		}
+		
+		.flex-item {
+			background-color: cadetblue;
+			margin: 10px;
+			width: 200px;
+			padding: 10px;	
+		}
+		
+		
+		.flex-item-speciel{
+			order: -1;
+			background-color: antiquewhite;
+			
+		}
+	</style>
+	
+</head>
+
+<body>
+	<div class="container">
+		<div class="flex-item">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item flex-item-speciel">4</div>
+		<div class="flex-item">5</div>
+		<div class="flex-item">6</div>
+	</div>
+	
+</body>
+</html>

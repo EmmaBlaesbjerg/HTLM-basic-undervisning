@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*CSS til store skræme*/
+body{
+	margin: 1%;
+}
+aside{
+	display: block;
+	width: 15%;
+	background: pink;
+}
+
+article{
+	width: 51%
+}
+
+.banner{
+	width: 20%;
+}
+
+/*Media query "indlejret" i dette stylesheet. Låser layotet ved 1200px bredde*/
+
+@media screen and (min-width: 1200px){
+	.container{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}

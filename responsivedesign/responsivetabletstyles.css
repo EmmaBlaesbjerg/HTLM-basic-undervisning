@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*CSS til mellemsformater*/
+
+footer{
+	display: block;
+	height: 80px;
+	background: lightblue;
+}
+
+.logo{
+	width: 15%;
+}
+
+nav{
+	width: 76%;
+	height: 60px;
+}
+
+article{
+	width: 60%;
+}
+
+.banner{
+	width: 31%;
+	background: yellow;
+	height: 200px;
+}

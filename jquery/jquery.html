@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+	
+	<style>
+		body{
+			
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
+		nav {
+			position: fixed;
+			width: 100%;
+			height: 50px;
+			top: 0px;
+			left: 0px;
+			z-index: 9999;
+			background: white;
+			}
+		
+		
+		section {
+			height: 100vh;
+			padding-top: 50px;
+			display: block;
+		}
+		
+		#home{
+			background: lightblue;
+		}
+		
+		#contact{
+			background: lightpink;
+		}
+	
+	</style>
+	
+	
+<title>Eksempel</title>
+<meta charset="utf-8" />
+	<!--Loading jQuery-->
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--loading scrool to plugin-->
+	<script src="scrips/jquery.scrollTo.min.js"></script>
+	
+	
+<script>
+	
+	$(document).ready(function(){
+		// bliver udført, når dokumentet er læst ind!
+		console.log('jQuery er der!');
+		$('#knap').click(klik);
+				
+	});
+	
+	//implementing scrool animation
+	
+	$('nav a').click(function(){
+		$(window).scrollTo(this.hash, 1000);
+	});
+	
+	//var trigger = document.getElementById('knap');
+	//trigger.addEventListener('click', klik);
+	
+	
+	
+	function klik() {
+		var msg = $('#resultat');
+		
+		if(!$('#tekstfelt').val()){
+		   //alert('Please - fill in your name!');
+			msg.html('Please fill in your name').css('color', 'red');
+			//intet brug for dette pga. ovenstående sætning : document.getElementById("resultat").innerHTML = 'Please fill in your name!'
+		   
+		}else{
+			   var brugerensNavn = $('#tekstfelt').val();
+				msg.html('Hej' + brugerensNavn).css('color', 'green');
+		   //var brugerensNavn = document.getElementById("tekstfelt").value;
+			//document.getElementById("resultat").innerHTML = "Hej " + brugerensNavn;
+		   }
+		   
+			
+	}
+</script>
+</head>
+
+<body>
+
+<nav>
+	<a href="#home">Homepage</a>
+	<a href="#contact">Contact</a>
+</nav>
+	
+<section id="home">
+  <h1>This is the content for home</h1>
+</section>
+	
+<section id="contact">
+  <input type="text" id="tekstfelt" />
+  <input type="button" id="knap" value="Tryk her"/>
+  <div id="resultat"> Svaret kommer her... </div>
+</section>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
